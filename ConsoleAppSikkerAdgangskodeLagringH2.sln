@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29001.49
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppSikkerAdgangskodeLagringH2", "ConsoleAppSikkerAdgangskodeLagringH2\ConsoleAppSikkerAdgangskodeLagringH2.csproj", "{1F91BA9A-D7E4-4442-B9FB-0243BB992AC8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F91BA9A-D7E4-4442-B9FB-0243BB992AC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F91BA9A-D7E4-4442-B9FB-0243BB992AC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F91BA9A-D7E4-4442-B9FB-0243BB992AC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F91BA9A-D7E4-4442-B9FB-0243BB992AC8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {960EADB7-4AC5-4FB5-BC57-4807EB11ABA3}
+	EndGlobalSection
+EndGlobal
