@@ -63,7 +63,7 @@ namespace ConsoleAppSikkerAdgangskodeLagringH2
 
                     break;
                 default:
-
+                    Console.WriteLine("Pleace, enter a valid number");
                     break;
             }
 
