@@ -23,23 +23,23 @@ namespace ConsoleAppSikkerAdgangskodeLagringH2
             }
         }
 
-        private static byte[] Combine(byte[] first, byte[] second)
-        {
-            byte[] ret = new byte[first.Length + second.Length];
+        //private static byte[] Combine(byte[] first, byte[] second)
+        //{
+        //    byte[] ret = new byte[first.Length + second.Length];
 
-            Buffer.BlockCopy(first, 0, ret, 0, first.Length);
-            Buffer.BlockCopy(second, 0, ret, first.Length, second.Length);
+        //    Buffer.BlockCopy(first, 0, ret, 0, first.Length);
+        //    Buffer.BlockCopy(second, 0, ret, first.Length, second.Length);
 
-            return ret;
-        }
+        //    return ret;
+        //}
 
-        public static byte[] GetMacMd5(byte[] getHashed, byte[] salt)
-        {
-            using (MD5 md5 = MD5.Create())
-            {
-                return md5.ComputeHash(Combine(getHashed,salt));
-            }
-        }
+        //public static byte[] GetMacMd5(byte[] getHashed, byte[] salt)
+        //{
+        //    using (MD5 md5 = MD5.Create())
+        //    {
+        //        return md5.ComputeHash(Combine(getHashed,salt));
+        //    }
+        //}
 
         public static byte[] HashPasswordWhitPBKDF2(byte[] toBeHashed, byte[] salt, int numberOfRounds)
         {

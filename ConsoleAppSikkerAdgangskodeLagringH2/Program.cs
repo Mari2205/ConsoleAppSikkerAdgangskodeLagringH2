@@ -34,14 +34,19 @@ namespace ConsoleAppSikkerAdgangskodeLagringH2
                     hashToFile[0] = Convert.ToBase64String(md5HashedPassword);
                     hashToFile[1] = Convert.ToBase64String(salt);
 
+                    Console.WriteLine(hashToFile[0]);
+                    Console.WriteLine(hashToFile[1]);
+
                     file.WriteToFile(hashToFile);
                     break;
                 case 2:
                     Console.WriteLine("Original Password:");
                     originalPassword = Console.ReadLine();
 
+
+
                     string[] hashFromFile = file.ReadFromFile();
-                    byte[] saltChek = Encoding.ASCII.GetBytes(hashFromFile[0]);
+                    byte[] saltChek = Encoding.ASCII.GetBytes(hashFromFile[1]);
 
                     byte[] md5HashedTest = Hash.HashPasswordWhitPBKDF2(Encoding.UTF8.GetBytes(originalPassword),saltChek, 10000);
 
